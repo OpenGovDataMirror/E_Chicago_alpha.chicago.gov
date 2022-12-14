@@ -1,0 +1,73 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Chicago
+subtitle: Mayor Lori E. Lightfoot
+email: cityfeedback@cityofchicago.org
+description: >- # this means to ignore newlines until "baseurl:"
+  A new digital experience for Chicago.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: https://chicago.gov # the base hostname & protocol for your site, e.g. http://example.com
+name: alpha.chicago.gov
+google_analytics_ua: UA-29954971-24
+twitter_username: chicago311
+github_username: Chicago
+
+
+# Build settings
+markdown: kramdown
+remote_theme: Chicago/design-cds-jekyll
+
+plugins:
+  - jekyll-feed
+  - jekyll-remote-theme
+
+
+# To enable search, uncomment the search section
+# You will need to setup a search account with search.gov
+# https://search.usa.gov/signup
+# Your search_site_handle value is from the search.gov settings page.
+# CDS note: We are using search site handle to simply flip search against chicago.gov's search interface on or off.
+
+search_site_handle: searchgov-site-handle
+
+# Configuration for projects and team collections
+# See https://jekyllrb.com/docs/collections/ for more information about collections.
+# collections:
+#   projects:
+#     output: true
+#   team:
+#     output: true
+
+# projects:
+#    layout: project
+#    title: Title of project
+#    permalink: /projects/link-to-project/
+#    description: Project description.
+#    large_image: /assets/img/hero.png
+#    small_image: /assets/img/hero.png
+
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
